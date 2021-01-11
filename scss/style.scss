@@ -26,6 +26,7 @@ html {
 /*Header styls*/
 
 header {
+  margin: 0 auto;
   background: url(../img/hero_bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
@@ -55,7 +56,6 @@ header {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-
   html {
     font-size: 9px;
   }
@@ -80,13 +80,11 @@ header {
       .header__paragraph {
         padding-bottom: 19.5rem;
       }
-
     }
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
   /*Header styls*/
   header {
     min-width: 48.1rem;

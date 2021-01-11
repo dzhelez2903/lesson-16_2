@@ -25,6 +25,7 @@ html {
 
 /*Header styls*/
 header {
+  margin: 0 auto;
   background: url(../img/hero_bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
