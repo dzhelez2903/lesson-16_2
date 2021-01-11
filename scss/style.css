@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "LatoLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/LatoLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/LatoRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/LatoBold.woff") format("woff");
+}
+
+html {
+  font-size: 10px;
+}
+
+/*Header styls*/
+header {
+  background: url(../img/hero_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header .header__container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+header .header__container .header__heading {
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  font-size: 5.4rem;
+  color: #fff;
+}
+
+header .header__container .header__paragraph {
+  text-transform: uppercase;
+  font-family: "LatoRegular";
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2.5;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+  /*Header styls*/
+  header {
+    min-width: 48rem;
+  }
+  header .header__container {
+    width: 90%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  header .header__container .header__logo {
+    margin-bottom: 9.4rem;
+  }
+  header .header__container .header__heading {
+    margin-bottom: 5.3rem;
+  }
+  header .header__container .header__paragraph {
+    padding-bottom: 19.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Header styls*/
+  header {
+    min-width: 48.1rem;
+    max-width: 76.7rem;
+  }
+  header .header__container {
+    width: 90%;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  header .header__container .header__logo {
+    margin-bottom: 9.4rem;
+  }
+  header .header__container .header__heading {
+    margin-bottom: 5.3rem;
+  }
+  header .header__container .header__paragraph {
+    padding-bottom: 19.5rem;
+  }
+  header .header__container .header__scroll {
+    padding-bottom: 11.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Header styls*/
+  header {
+    min-width: 76.8rem;
+    max-width: 99.1rem;
+  }
+  header .header__container {
+    width: 80%;
+    padding-top: 11.5rem;
+    padding-bottom: 11.5rem;
+  }
+  header .header__container .header__logo {
+    margin-bottom: 9.4rem;
+  }
+  header .header__container .header__heading {
+    margin-bottom: 5.3rem;
+  }
+  header .header__container .header__paragraph {
+    padding-bottom: 19.5rem;
+  }
+  header .header__container .header__scroll {
+    padding-bottom: 11.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1261px) {
+  /*Header styls*/
+  header {
+    min-width: 99.2rem;
+    max-width: 126.1rem;
+  }
+  header .header__container {
+    width: 80%;
+    padding-top: 11.5rem;
+    padding-bottom: 11.5rem;
+  }
+  header .header__container .header__logo {
+    margin-bottom: 9.4rem;
+  }
+  header .header__container .header__heading {
+    margin-bottom: 5.3rem;
+  }
+  header .header__container .header__paragraph {
+    padding-bottom: 19.5rem;
+  }
+  header .header__container .header__scroll {
+    padding-bottom: 11.5rem;
+  }
+}
+
+@media (min-width: 1262px) {
+  /*Header styls*/
+  header {
+    min-width: 126.2rem;
+    max-width: 192rem;
+  }
+  header .header__container {
+    width: 47%;
+    padding-top: 28.3rem;
+    padding-bottom: 11.5rem;
+  }
+  header .header__container .header__logo {
+    margin-bottom: 9.4rem;
+  }
+  header .header__container .header__heading {
+    margin-bottom: 5.3rem;
+  }
+  header .header__container .header__paragraph {
+    padding-bottom: 19.5rem;
+  }
+  header .header__container .header__scroll {
+    padding-bottom: 11.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
