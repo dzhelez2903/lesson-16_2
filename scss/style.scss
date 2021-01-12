@@ -25,8 +25,6 @@ html {
 
 /*Header styls*/
 
-
-
 .title {
   font-family: "LatoBold";
   text-transform: uppercase;
@@ -99,7 +97,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  
+
   .services__container {
     display: flex;
     flex-direction: column;
@@ -172,13 +170,12 @@ header {
     margin: 0 auto;
 
     .text {
-      margin: 0 8rem 3rem;
+      margin: 0 2rem 3rem;
     }
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
   /*Header styls*/
   header {
     min-width: 48.1rem;
@@ -239,7 +236,6 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
   /*Header styls*/
   header {
     min-width: 76.8rem;
@@ -304,7 +300,6 @@ header {
 }
 
 @media (min-width: 992px) and (max-width: 1261px) {
-
   /*Header styls*/
   header {
     min-width: 99.2rem;
@@ -366,7 +361,6 @@ header {
 }
 
 @media (min-width: 1262px) {
-
   /*Header styls*/
   header {
     min-width: 126.2rem;
