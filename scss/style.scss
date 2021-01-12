@@ -25,6 +25,25 @@ html {
 
 /*Header styls*/
 
+.brd {
+  border: 2px solid #3c3c3c;
+}
+
+.title {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3.2rem;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+
+.text {
+  font-family: "LatoLight";
+  font-size: 1.6rem;
+  color: #3c3c3c;
+}
+
 header {
   margin: 0 auto;
   background: url(../img/hero_bg.jpg) no-repeat;
@@ -60,29 +79,57 @@ header {
   }
 }
 
+.about_us {
+  margin: 0 auto;
+
+  .about_us__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 480px) {
   html {
     font-size: 9px;
   }
-
   /*Header styls*/
   header {
-    min-width: 48rem;
+    max-width: 48rem;
 
     .header__container {
       width: 90%;
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
-      .header__heading {
-        margin-bottom: 4.3rem;
-      }
 
-      .header__paragraph {
-        padding-bottom: 8.5rem;
-      }
+    .header__heading {
+      margin-bottom: 4.3rem;
+    }
+
+    .header__paragraph {
+      padding-bottom: 8.5rem;
     }
   }
+  /*first section styls*/
+  .about_us {
+    max-width: 48rem;
+  }
+
+  .about_us__container {
+    width: 90%;
+    margin: 2rem auto;
+
+    :nth-child(2) {
+      margin: 0 2rem 4rem;
+    }
+
+    :nth-child(3) {
+      margin: 0 2rem 3rem;
+    }
+  }
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
   /*Header styls*/
@@ -94,7 +141,6 @@ header {
       width: 90%;
       padding-top: 7rem;
       padding-bottom: 7rem;
-
 
       .header__heading {
         margin-bottom: 5.3rem;
@@ -109,11 +155,28 @@ header {
       }
     }
   }
+  /*first section styls*/
+  .about_us {
+    min-width: 48.1rem;
+    max-width: 76.7rem;
+  }
+
+  .about_us__container {
+    width: 80%;
+    margin: 5rem auto;
+
+    :nth-child(2) {
+      margin: 0 5rem 4rem;
+    }
+
+    :nth-child(3) {
+      margin: 0 5rem 3rem;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /*Header styls*/
-
   header {
     min-width: 76.8rem;
     max-width: 99.1rem;
@@ -140,11 +203,28 @@ header {
       }
     }
   }
+  /*first section styls*/
+  .about_us {
+    min-width: 76.8rem;
+    max-width: 99.1rem;
+  }
+  
+  .about_us__container {
+    width: 70%;
+    margin: 5rem auto;
+
+    :nth-child(2) {
+      margin: 0 8rem 4rem;
+    }
+
+    :nth-child(3) {
+      margin: 0 11.5rem 3rem;
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1261px) {
   /*Header styls*/
-
   header {
     min-width: 99.2rem;
     max-width: 126.1rem;
@@ -167,11 +247,28 @@ header {
       }
     }
   }
+  /*first section styls*/
+  .about_us {
+    min-width: 99.2rem;
+    max-width: 126.1rem;
+  }
+
+  .about_us__container {
+    width: 70%;
+    margin: 5rem auto;
+
+    :nth-child(2) {
+      margin: 0 8rem 4rem;
+    }
+
+    :nth-child(3) {
+      margin: 0 8rem 3rem;
+    }
+  }
 }
 
 @media (min-width: 1262px) {
   /*Header styls*/
-
   header {
     min-width: 126.2rem;
     max-width: 192rem;
@@ -192,6 +289,24 @@ header {
       .header__scroll {
         padding-bottom: 11.5rem;
       }
+    }
+  }
+  /*first section styls*/
+  .about_us {
+    min-width: 126.2rem;
+    max-width: 192rem;
+  }
+
+  .about_us__container {
+    width: 47%;
+    margin: 16rem auto;
+
+    :nth-child(2) {
+      margin: 0 18rem 4rem;
+    }
+
+    :nth-child(3) {
+      margin: 0 21.5rem 3rem;
     }
   }
 }

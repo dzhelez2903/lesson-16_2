@@ -24,6 +24,25 @@ html {
 }
 
 /*Header styls*/
+.brd {
+  border: 2px solid #3c3c3c;
+}
+
+.title {
+  font-family: "LatoBold";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3.2rem;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+
+.text {
+  font-family: "LatoLight";
+  font-size: 1.6rem;
+  color: #3c3c3c;
+}
+
 header {
   margin: 0 auto;
   background: url(../img/hero_bg.jpg) no-repeat;
@@ -64,6 +83,24 @@ header .header__container .header__paragraph {
   line-height: 2.5;
 }
 
+.about_us {
+  margin: 0 auto;
+}
+
+.about_us .about_us__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 0px) and (max-width: 480px) {
   html {
     font-size: 9px;
@@ -82,6 +119,18 @@ header .header__container .header__paragraph {
   }
   header .header__paragraph {
     padding-bottom: 8.5rem;
+  }
+  /*first section styls*/
+  .about_us__container {
+    min-width: 48rem;
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .about_us__container :nth-child(2) {
+    margin: 0 2rem 4rem;
+  }
+  .about_us__container :nth-child(3) {
+    margin: 0 2rem 3rem;
   }
 }
 
@@ -104,6 +153,17 @@ header .header__container .header__paragraph {
   }
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
+  }
+  /*first section styls*/
+  .about_us__container {
+    width: 80%;
+    margin: 5rem auto;
+  }
+  .about_us__container :nth-child(2) {
+    margin: 0 5rem 4rem;
+  }
+  .about_us__container :nth-child(3) {
+    margin: 0 5rem 3rem;
   }
 }
 
@@ -130,6 +190,17 @@ header .header__container .header__paragraph {
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
   }
+  /*first section styls*/
+  .about_us__container {
+    width: 70%;
+    margin: 5rem auto;
+  }
+  .about_us__container :nth-child(2) {
+    margin: 0 8rem 4rem;
+  }
+  .about_us__container :nth-child(3) {
+    margin: 0 11.5rem 3rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1261px) {
@@ -152,6 +223,17 @@ header .header__container .header__paragraph {
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
   }
+  /*first section styls*/
+  .about_us__container {
+    width: 70%;
+    margin: 5rem auto;
+  }
+  .about_us__container :nth-child(2) {
+    margin: 0 8rem 4rem;
+  }
+  .about_us__container :nth-child(3) {
+    margin: 0 8rem 3rem;
+  }
 }
 
 @media (min-width: 1262px) {
@@ -173,6 +255,17 @@ header .header__container .header__paragraph {
   }
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
+  }
+  /*first section styls*/
+  .about_us__container {
+    width: 47%;
+    margin: 16rem auto;
+  }
+  .about_us__container :nth-child(2) {
+    margin: 0 18rem 4rem;
+  }
+  .about_us__container :nth-child(3) {
+    margin: 0 21.5rem 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
