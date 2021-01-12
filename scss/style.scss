@@ -93,7 +93,7 @@ header {
   }
 }
 
-/*first section styls*/
+/*second section styls*/
 
 .services {
   margin: 0 auto;
@@ -136,6 +136,10 @@ header {
   text-align: center;
   justify-content: center;
 
+  .brd {
+    border: 2px solid #3c3c3c;
+  }
+
   .title {
     font-size: 3.4rem;
   }
@@ -154,10 +158,58 @@ header {
 
 }
 
-.brd {
-  border: 2px solid #3c3c3c;
+/*fourth section styls*/
+
+.content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 28.54% 41.77% 28.65%;
+  grid-template-rows: 237px 237px;
+  gap: 10px 10px;
+  grid-auto-flow: dense;
+  grid-template-areas:
+    "first second third"
+    "fourth fifth sixth";
 }
 
+.first {
+  grid-area: first;
+  background: url(../img/grid_div/1.jpg) no-repeat; 
+}
+
+.second {
+  grid-area: second;
+  background: url(../img/grid_div/2.jpg) no-repeat;
+}
+
+.third {
+  grid-area: third;
+  background: url(../img/grid_div/3.jpg) no-repeat;
+}
+
+.fourth {
+  grid-area: fourth;
+  background: url(../img/grid_div/4.jpg) no-repeat;
+}
+
+.fifth {
+  grid-area: fifth;
+  background: url(../img/grid_div/5.jpg) no-repeat;
+}
+
+.sixth {
+  grid-area: sixth;
+  background: url(../img/grid_div/6.jpg) no-repeat;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth p {
+  font-family: "LatoBold";
+  font-size: 3.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 17rem 0 0 4.2rem;
+    
+}
 
 @media (min-width: 0px) and (max-width: 480px) {
   html {
@@ -477,6 +529,12 @@ header {
       margin: 0 8rem 3rem;
     }
   }
+  /*fourth section styls*/
+
+  .content {
+    min-width: 99.2rem;
+    max-width: 126.1rem;
+  }
 }
 
 @media (min-width: 1262px) {
@@ -556,5 +614,12 @@ header {
     .text {
       margin: 0 19.5rem 11.2rem;
     }
+  }
+
+  /*fourth section styls*/
+
+  .content {
+    min-width: 126.2rem;
+    max-width: 192rem;
   }
 }

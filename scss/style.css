@@ -103,7 +103,7 @@ header .header__container .header__paragraph {
   border: 2px solid #3c3c3c;
 }
 
-/*first section styls*/
+/*second section styls*/
 .services {
   margin: 0 auto;
   background: url(../img/services_bg.jpg) no-repeat;
@@ -159,6 +159,10 @@ header .header__container .header__paragraph {
           justify-content: center;
 }
 
+.what_we_do_container .brd {
+  border: 2px solid #3c3c3c;
+}
+
 .what_we_do_container .title {
   font-size: 3.4rem;
 }
@@ -175,8 +179,68 @@ header .header__container .header__paragraph {
   font-size: 1.4rem;
 }
 
-.brd {
-  border: 2px solid #3c3c3c;
+/*fourth section styls*/
+.content {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28.54% 41.77% 28.65%;
+      grid-template-columns: 28.54% 41.77% 28.65%;
+  -ms-grid-rows: 237px 237px;
+      grid-template-rows: 237px 237px;
+  gap: 10px 10px;
+  grid-auto-flow: dense;
+      grid-template-areas: "first second third" "fourth fifth sixth";
+}
+
+.first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  background: url(../img/grid_div/1.jpg) no-repeat;
+}
+
+.second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+  background: url(../img/grid_div/2.jpg) no-repeat;
+}
+
+.third {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: third;
+  background: url(../img/grid_div/3.jpg) no-repeat;
+}
+
+.fourth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fourth;
+  background: url(../img/grid_div/4.jpg) no-repeat;
+}
+
+.fifth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: fifth;
+  background: url(../img/grid_div/5.jpg) no-repeat;
+}
+
+.sixth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sixth;
+  background: url(../img/grid_div/6.jpg) no-repeat;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth p {
+  font-family: "LatoBold";
+  font-size: 3.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 17rem 0 0 4.2rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -433,6 +497,11 @@ header .header__container .header__paragraph {
   .what_we_do_container .text {
     margin: 0 8rem 3rem;
   }
+  /*fourth section styls*/
+  .content {
+    min-width: 99.2rem;
+    max-width: 126.1rem;
+  }
 }
 
 @media (min-width: 1262px) {
@@ -496,6 +565,11 @@ header .header__container .header__paragraph {
   }
   .what_we_do_container .text {
     margin: 0 19.5rem 11.2rem;
+  }
+  /*fourth section styls*/
+  .content {
+    min-width: 126.2rem;
+    max-width: 192rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
