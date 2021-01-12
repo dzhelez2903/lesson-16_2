@@ -44,6 +44,11 @@ header .header__container {
   text-align: center;
 }
 
+header .header__container .header__logo {
+  width: 6.9rem;
+  margin: 0 auto 9.4rem auto;
+}
+
 header .header__container .header__heading {
   text-transform: uppercase;
   font-family: "LatoBold";
@@ -69,17 +74,14 @@ header .header__container .header__paragraph {
   }
   header .header__container {
     width: 90%;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
-  header .header__container .header__logo {
-    margin-bottom: 9.4rem;
+  header .header__heading {
+    margin-bottom: 4.3rem;
   }
-  header .header__container .header__heading {
-    margin-bottom: 5.3rem;
-  }
-  header .header__container .header__paragraph {
-    padding-bottom: 19.5rem;
+  header .header__paragraph {
+    padding-bottom: 8.5rem;
   }
 }
 
@@ -94,14 +96,11 @@ header .header__container .header__paragraph {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  header .header__container .header__logo {
-    margin-bottom: 9.4rem;
-  }
   header .header__container .header__heading {
     margin-bottom: 5.3rem;
   }
   header .header__container .header__paragraph {
-    padding-bottom: 19.5rem;
+    padding-bottom: 13.5rem;
   }
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
@@ -126,7 +125,7 @@ header .header__container .header__paragraph {
     margin-bottom: 5.3rem;
   }
   header .header__container .header__paragraph {
-    padding-bottom: 19.5rem;
+    padding-bottom: 15.5rem;
   }
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
@@ -144,14 +143,11 @@ header .header__container .header__paragraph {
     padding-top: 11.5rem;
     padding-bottom: 11.5rem;
   }
-  header .header__container .header__logo {
-    margin-bottom: 9.4rem;
-  }
   header .header__container .header__heading {
     margin-bottom: 5.3rem;
   }
   header .header__container .header__paragraph {
-    padding-bottom: 19.5rem;
+    padding-bottom: 17.5rem;
   }
   header .header__container .header__scroll {
     padding-bottom: 11.5rem;
@@ -168,9 +164,6 @@ header .header__container .header__paragraph {
     width: 47%;
     padding-top: 28.3rem;
     padding-bottom: 11.5rem;
-  }
-  header .header__container .header__logo {
-    margin-bottom: 9.4rem;
   }
   header .header__container .header__heading {
     margin-bottom: 5.3rem;

@@ -38,6 +38,11 @@ header {
     flex-direction: column;
     text-align: center;
 
+    .header__logo {
+      width: 6.9rem;
+      margin: 0 auto 9.4rem auto;
+    }
+
     .header__heading {
       text-transform: uppercase;
       font-family: "LatoBold";
@@ -66,23 +71,18 @@ header {
 
     .header__container {
       width: 90%;
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-
-      .header__logo {
-        margin-bottom: 9.4rem;
-      }
-
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
       .header__heading {
-        margin-bottom: 5.3rem;
+        margin-bottom: 4.3rem;
       }
 
       .header__paragraph {
-        padding-bottom: 19.5rem;
+        padding-bottom: 8.5rem;
       }
     }
   }
-}
 
 @media (min-width: 481px) and (max-width: 767px) {
   /*Header styls*/
@@ -95,16 +95,13 @@ header {
       padding-top: 7rem;
       padding-bottom: 7rem;
 
-      .header__logo {
-        margin-bottom: 9.4rem;
-      }
 
       .header__heading {
         margin-bottom: 5.3rem;
       }
 
       .header__paragraph {
-        padding-bottom: 19.5rem;
+        padding-bottom: 13.5rem;
       }
 
       .header__scroll {
@@ -135,7 +132,7 @@ header {
       }
 
       .header__paragraph {
-        padding-bottom: 19.5rem;
+        padding-bottom: 15.5rem;
       }
 
       .header__scroll {
@@ -157,16 +154,12 @@ header {
       padding-top: 11.5rem;
       padding-bottom: 11.5rem;
 
-      .header__logo {
-        margin-bottom: 9.4rem;
-      }
-
       .header__heading {
         margin-bottom: 5.3rem;
       }
 
       .header__paragraph {
-        padding-bottom: 19.5rem;
+        padding-bottom: 17.5rem;
       }
 
       .header__scroll {
@@ -187,10 +180,6 @@ header {
       width: 47%;
       padding-top: 28.3rem;
       padding-bottom: 11.5rem;
-
-      .header__logo {
-        margin-bottom: 9.4rem;
-      }
 
       .header__heading {
         margin-bottom: 5.3rem;
