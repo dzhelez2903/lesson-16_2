@@ -23,7 +23,6 @@ html {
   font-size: 10px;
 }
 
-/*Header styls*/
 .title {
   font-family: "LatoBold";
   text-transform: uppercase;
@@ -40,6 +39,7 @@ html {
   line-height: 1.5;
 }
 
+/*Header styls*/
 header {
   margin: 0 auto;
   background: url(../img/hero_bg.jpg) no-repeat;
@@ -80,6 +80,7 @@ header .header__container .header__paragraph {
   line-height: 2.5;
 }
 
+/*first section styls*/
 .about_us {
   margin: 0 auto;
 }
@@ -102,6 +103,7 @@ header .header__container .header__paragraph {
   border: 2px solid #3c3c3c;
 }
 
+/*first section styls*/
 .services {
   margin: 0 auto;
   background: url(../img/services_bg.jpg) no-repeat;
@@ -111,6 +113,7 @@ header .header__container .header__paragraph {
 }
 
 .services .services__container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,6 +137,46 @@ header .header__container .header__paragraph {
 
 .services .text {
   color: #fff;
+}
+
+/*third section styls*/
+.what_we_do {
+  margin: 0 auto;
+}
+
+.what_we_do_container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.what_we_do_container .title {
+  font-size: 3.4rem;
+}
+
+.what_we_do_container h3 {
+  font-family: "LatoBold";
+  font-size: 2rem;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  padding: 4rem 0 4rem 0;
+}
+
+.what_we_do_container .text {
+  font-size: 1.4rem;
+}
+
+.brd {
+  border: 2px solid #3c3c3c;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -169,7 +212,7 @@ header .header__container .header__paragraph {
   .about_us__container :nth-child(3) {
     margin: 0 2rem 3rem;
   }
-  /*second section styls*/
+  /*first section styls*/
   .services {
     max-width: 48rem;
     padding: 5rem 0 5rem 0;
@@ -179,6 +222,20 @@ header .header__container .header__paragraph {
     margin: 0 auto;
   }
   .services__container .text {
+    margin: 0 2rem 3rem;
+  }
+  /*third section styls*/
+  .what_we_do {
+    max-width: 48rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .what_we_do_container {
+    width: 90%;
+  }
+  .what_we_do_container h3 {
+    padding: 4rem 0 4rem 0;
+  }
+  .what_we_do_container .text {
     margin: 0 2rem 3rem;
   }
 }
@@ -226,9 +283,23 @@ header .header__container .header__paragraph {
   }
   .services__container {
     width: 80%;
-    margin: 0 auto;
   }
   .services__container .text {
+    margin: 0 8rem 3rem;
+  }
+  /*third section styls*/
+  .what_we_do {
+    min-width: 48.1rem;
+    max-width: 76.7rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .what_we_do_container {
+    width: 80%;
+  }
+  .what_we_do_container h3 {
+    padding: 4rem 0 4rem 0;
+  }
+  .what_we_do_container .text {
     margin: 0 8rem 3rem;
   }
 }
@@ -279,9 +350,23 @@ header .header__container .header__paragraph {
   }
   .services__container {
     width: 70%;
-    margin: 0 auto;
   }
   .services__container .text {
+    margin: 0 8rem 3rem;
+  }
+  /*third section styls*/
+  .what_we_do {
+    min-width: 76.8rem;
+    max-width: 99.1rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .what_we_do_container {
+    width: 70%;
+  }
+  .what_we_do_container h3 {
+    padding: 4rem 0 4rem 0;
+  }
+  .what_we_do_container .text {
     margin: 0 8rem 3rem;
   }
 }
@@ -329,9 +414,23 @@ header .header__container .header__paragraph {
   }
   .services__container {
     width: 70%;
-    margin: 0 auto;
   }
   .services__container .text {
+    margin: 0 8rem 3rem;
+  }
+  /*third section styls*/
+  .what_we_do {
+    min-width: 99.2rem;
+    max-width: 126.1rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .what_we_do_container {
+    width: 70%;
+  }
+  .what_we_do_container h3 {
+    padding: 4rem 0 4rem 0;
+  }
+  .what_we_do_container .text {
     margin: 0 8rem 3rem;
   }
 }
@@ -379,10 +478,24 @@ header .header__container .header__paragraph {
   }
   .services__container {
     width: 47%;
-    margin: 0 auto;
   }
   .services__container .text {
     margin: 0 19.5rem 3rem;
+  }
+  /*third section styls*/
+  .what_we_do {
+    min-width: 126.2rem;
+    max-width: 192rem;
+    padding: 12rem 0 12rem 0;
+  }
+  .what_we_do_container {
+    width: 47%;
+  }
+  .what_we_do_container h3 {
+    padding: 4rem 0 4rem 0;
+  }
+  .what_we_do_container .text {
+    margin: 0 19.5rem 11.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
