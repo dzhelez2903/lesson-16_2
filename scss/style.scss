@@ -159,62 +159,72 @@ header {
 }
 
 /*fourth section styls*/
-
 .content {
+  justify-content: center;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 28.54% 41.77% 28.65%;
-  grid-template-rows: 237px 237px;
+  grid-template-columns: 7.65% 20.89% 20.89% 7.65%;
+  grid-template-rows: 237px 237px 237px 237px;
   gap: 10px 10px;
-  grid-auto-flow: dense;
   grid-template-areas:
-    "first second third"
-    "fourth fifth sixth";
+    "first first third third"
+    ". second second ."
+    ". fifth fifth ."
+    "fourth fourth sixth sixth";
 }
 
 .first {
   grid-area: first;
-  background: url(../img/grid_div/1.jpg) no-repeat; 
+  background: url(../img/grid_div/1.jpg) no-repeat;
+  display: flex;
 }
 
 .second {
   grid-area: second;
   background: url(../img/grid_div/2.jpg) no-repeat;
+  display: flex;
 }
 
 .third {
   grid-area: third;
   background: url(../img/grid_div/3.jpg) no-repeat;
+  display: flex;
 }
 
 .fourth {
   grid-area: fourth;
   background: url(../img/grid_div/4.jpg) no-repeat;
+  display: flex;
 }
 
 .fifth {
   grid-area: fifth;
   background: url(../img/grid_div/5.jpg) no-repeat;
+  display: flex;
 }
 
 .sixth {
   grid-area: sixth;
   background: url(../img/grid_div/6.jpg) no-repeat;
+  display: flex;
 }
 
-.first, .second, .third, .fourth, .fifth, .sixth p {
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
   font-family: "LatoBold";
   font-size: 3.4rem;
   color: #fff;
   text-transform: uppercase;
-  padding: 17rem 0 0 4.2rem;
-    
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  html {
+  /*html {
     font-size: 9px;
-  }
+  }*/
 
   /*Header styls*/
   header {
@@ -285,11 +295,30 @@ header {
       margin: 0 2rem 3rem;
     }
   }
+
+  /*fourth section styls*/
+
+  .content {
+    max-width: 48rem;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
 
   /*Header styls*/
+
   header {
     min-width: 48.1rem;
     max-width: 76.7rem;
@@ -314,6 +343,7 @@ header {
   }
 
   /*first section styls*/
+
   .about_us {
     min-width: 48.1rem;
     max-width: 76.7rem;
@@ -333,6 +363,7 @@ header {
   }
 
   /*second section styls*/
+
   .services {
     min-width: 48.1rem;
     max-width: 76.7rem;
@@ -348,6 +379,7 @@ header {
   }
 
   /*third section styls*/
+
   .what_we_do {
     min-width: 48.1rem;
     max-width: 76.7rem;
@@ -365,11 +397,31 @@ header {
       margin: 0 8rem 3rem;
     }
   }
+
+  /*fourth section styls*/
+
+  .content {
+    min-width: 48.1rem;
+    max-width: 76.7rem;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.4rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
   /*Header styls*/
+
   header {
     min-width: 76.8rem;
     max-width: 99.1rem;
@@ -398,6 +450,7 @@ header {
   }
 
   /*first section styls*/
+
   .about_us {
     min-width: 76.8rem;
     max-width: 99.1rem;
@@ -417,6 +470,7 @@ header {
   }
 
   /*second section styls*/
+
   .services {
     min-width: 76.8rem;
     max-width: 99.1rem;
@@ -432,6 +486,7 @@ header {
   }
 
   /*third section styls*/
+
   .what_we_do {
     min-width: 76.8rem;
     max-width: 99.1rem;
@@ -449,11 +504,38 @@ header {
       margin: 0 8rem 3rem;
     }
   }
+
+  /*fourth section styls*/
+
+  .content {
+    min-width: 76.8rem;
+    max-width: 99.1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28.54% 41.77% 28.65%;
+    grid-template-rows: 237px 237px;
+    gap: 10px 10px;
+    grid-auto-flow: dense;
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth";
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    padding: 17rem 0 0 4.2rem;
+    font-size: 2.4rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1261px) {
 
   /*Header styls*/
+
   header {
     min-width: 99.2rem;
     max-width: 126.1rem;
@@ -478,6 +560,7 @@ header {
   }
 
   /*first section styls*/
+
   .about_us {
     min-width: 99.2rem;
     max-width: 126.1rem;
@@ -497,6 +580,7 @@ header {
   }
 
   /*second section styls*/
+
   .services {
     min-width: 99.2rem;
     max-width: 126.1rem;
@@ -512,6 +596,7 @@ header {
   }
 
   /*third section styls*/
+
   .what_we_do {
     min-width: 99.2rem;
     max-width: 126.1rem;
@@ -529,17 +614,37 @@ header {
       margin: 0 8rem 3rem;
     }
   }
+
   /*fourth section styls*/
 
   .content {
     min-width: 99.2rem;
     max-width: 126.1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28.54% 41.77% 28.65%;
+    grid-template-rows: 237px 237px;
+    gap: 10px 10px;
+    grid-auto-flow: dense;
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth";
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    padding: 17rem 0 0 4.2rem;
   }
 }
 
 @media (min-width: 1262px) {
 
   /*Header styls*/
+
   header {
     min-width: 126.2rem;
     max-width: 192rem;
@@ -564,6 +669,7 @@ header {
   }
 
   /*first section styls*/
+
   .about_us {
     min-width: 126.2rem;
     max-width: 192rem;
@@ -583,6 +689,7 @@ header {
   }
 
   /*second section styls*/
+
   .services {
     min-width: 126.2rem;
     max-width: 192rem;
@@ -598,6 +705,7 @@ header {
   }
 
   /*third section styls*/
+
   .what_we_do {
     min-width: 126.2rem;
     max-width: 192rem;
@@ -621,5 +729,23 @@ header {
   .content {
     min-width: 126.2rem;
     max-width: 192rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 28.54% 41.77% 28.65%;
+    grid-template-rows: 237px 237px;
+    gap: 10px 10px;
+    grid-auto-flow: dense;
+    grid-template-areas:
+      "first second third"
+      "fourth fifth sixth";
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    padding: 17rem 0 0 4.2rem;
   }
 }
