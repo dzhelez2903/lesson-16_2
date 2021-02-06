@@ -21,6 +21,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -274,7 +275,6 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-
   /*Header styls*/
   header {
     max-width: 48rem;
@@ -385,7 +385,6 @@ footer {
 
       img: {
         margin-right: 1rem;
-
       }
     }
   }
